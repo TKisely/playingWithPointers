@@ -15,7 +15,7 @@ CheaterArray::CheaterArray() {
 }
 
 CheaterArray::~CheaterArray() {
-
+    if(items!= nullptr)delete[]items;
 }
 
 bool CheaterArray::makeItThisBig(int size) {
